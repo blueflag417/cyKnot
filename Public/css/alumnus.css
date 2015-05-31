@@ -1,0 +1,81 @@
+.s-wrap {
+  width: 16rem;
+  margin: 0 auto;
+}
+.u-menu {
+  box-sizing: border-box;
+  width: 16rem;
+  background: #19b3ed;
+  height: 2.5rem;
+  margin: 0 auto;
+  position: relative;
+}
+.u-left {
+  position: absolute;
+  width: 0.575rem;
+  height: 0.575rem;
+  background: url("../images/lib/left.png") no-repeat left top;
+  text-decoration: none;
+  background-size: contain;
+  top: 50%;
+  margin-top: -0.2875rem;
+  left: 1rem;
+}
+.u-menu span {
+  display: block;
+  width: 16rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fefffe;
+  font-size: 0.95rem;
+  font-family: "hiraginosansgb w3", "microsoft yahei";
+}
+.u-b_s {
+  width: 16rem;
+  height: 7.1rem;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.s-h_c {
+  position: absolute;
+  width: 3.1rem;
+  height: 3.1rem;
+  left: 50%;
+  top: 50%;
+  border-radius: 1.55rem;
+  margin: -1.55rem 0 0 -1.55rem;
+  background-size: cover;
+  background-position: center center;
+}
+.t-i .col {
+  display: inline-block;
+  line-height: 0.9rem;
+  text-overflow: ellipsis;
+  padding: 0.75rem 0;
+  overflow: inherit;
+  white-space: normal;
+  height: auto;
+}
+.t-i .col:nth-child(2n+1) {
+  width: 4.9rem;
+  color: #333333;
+  text-indent: 1em;
+  font-size: 0.8rem;
+  font-family: "hiraginosansgb w3", "microsoft yahei";
+}
+.t-i .col:nth-child(2n) {
+  width: 9.95rem;
+  padding-left: 0.875rem;
+  color: #111111;
+  vertical-align: top;
+  font-size: 0.8rem;
+  font-family: "hiraginosansgb w3", "microsoft yahei";
+}
+.t-i .row {
+  margin-bottom: 1px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.t-i .col:nth-child(10) {
+  line-height: 0;
+}

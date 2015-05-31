@@ -1,0 +1,54 @@
+.g-container {
+  width: 100%;
+  height: 100%;
+  background: url("../images/index/b_bg.png") no-repeat center bottom fixed;
+  position: absolute;
+  background-size: cover;
+}
+@media (min-width: 540px) {
+  .g-container {
+    background-position: left top;
+  }
+}
+.s-logo {
+  display: block;
+  width: 7.975rem;
+  height: 2.425rem;
+  background: url("../images/index/logo.png") no-repeat center center;
+  background-size: contain;
+  margin: 1.825rem auto 0;
+}
+.u-links {
+  margin-top: 3.575rem;
+}
+.u-links a {
+  display: block;
+  width: 10.275rem;
+  height: 2.3rem;
+  background: #ffc726;
+  border-radius: 0.225rem;
+  margin: 0 auto 2.25rem;
+  text-align: center;
+  line-height: 2.35rem;
+  color: #fff;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.05rem 0.125rem rgba(0, 161, 226, 0.5);
+  background-image: -moz-linear-gradient(top, #ffcd2a, #ffc322);
+  /* Firefox */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffcd2a), color-stop(1, #ffc322));
+  /* Saf4+, Chrome */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #ffcd2a', endColorstr=' #ffc322', GradientType='0');
+  /* IE*/
+  font-family: "hiraginosansgb w3", "microsoft yahei";
+  text-decoration: none;
+}
+.u-links a:last-child {
+  background: #ff6e45;
+  background-image: -moz-linear-gradient(top, #ff7c4e, #ff643f);
+  /* Firefox */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff7c4e), color-stop(1, #ff643f));
+  /* Saf4+, Chrome */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #ff7c4e', endColorstr=' #ff643f', GradientType='0');
+  /* IE*/
+}
