@@ -1,81 +1,90 @@
-.s-wrap {
+.s-wrap{
   width: 16rem;
   margin: 0 auto;
 }
-.u-menu {
+
+.u-menu{
   box-sizing: border-box;
   width: 16rem;
   background: #19b3ed;
-  height: 2.5rem;
+  height: (100/640)*16rem;
   margin: 0 auto;
   position: relative;
 }
-.u-left {
+.u-left{
   position: absolute;
-  width: 0.575rem;
-  height: 1.05rem;
+  width:  (23/640)*16rem;
+  height:  (42/640)*16rem;
   background: url("../images/lib/left.png") no-repeat left top;
   text-decoration: none;
   background-size: contain;
   top: 50%;
-  margin-top: -0.525rem;
-  left: 1rem;
+  margin-top: -(21/640)*16rem;
+  left: (40/640)*16rem;
 }
+
 .u-menu span {
   display: block;
   width: 16rem;
-  line-height: 2.5rem;
+  line-height: (100/640)*16rem;
   text-align: center;
   color: #fefffe;
-  font-size: 0.95rem;
-  font-family: "hiraginosansgb w3", "microsoft yahei";
+    font-size: (38/640)*16rem;
+    font-family: "hiraginosansgb w3", "microsoft yahei";
 }
+
 .u-b_s {
   width: 16rem;
-  height: 7.1rem;
+  height: (284/640)*16rem;
   background-size: cover;
   background-position: center center;
   position: relative;
 }
 .s-h_c {
   position: absolute;
-  width: 3.1rem;
-  height: 3.1rem;
+  width: (124/640)*16rem;
+  height: (124/640)*16rem;
   left: 50%;
   top: 50%;
-  border-radius: 1.55rem;
-  margin: -1.55rem 0 0 -1.55rem;
+  border-radius: (62/640)*16rem;
+  margin: -(62/640)*16rem 0 0 -(62/640)*16rem;
   background-size: cover;
   background-position: center center;
 }
-.t-i .col {
+
+.t-i .col{
   display: inline-block;
-  line-height: 0.9rem;
+  line-height:(36/640)*16rem;
   text-overflow: ellipsis;
-  padding: 0.75rem 0;
+  padding: (30/640)*16rem 0;
   overflow: inherit;
   white-space: normal;
   height: auto;
 }
 .t-i .col:nth-child(2n+1) {
-  width: 4.9rem;
+  width: (196/640)*16rem;
   color: #333333;
   text-indent: 1em;
-  font-size: 0.8rem;
+  font-size: (32/640)*16rem;
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
 .t-i .col:nth-child(2n) {
-  width: 9.95rem;
-  padding-left: 0.875rem;
+  width: (398/640)*16rem;
+  padding-left: (35/640)*16rem;
   color: #111111;
   vertical-align: top;
-  font-size: 0.8rem;
+  font-size: (32/640)*16rem;
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
-.t-i .row {
+
+.t-i .row{
   margin-bottom: 1px;
   border-bottom: 1px solid #dcdcdc;
 }
-.t-i .col:nth-child(10) {
+
+.t-i .col:nth-child(10){
   line-height: 0;
+}
+.t-i .row:last-child .col:first-child{
+
 }
