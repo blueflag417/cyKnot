@@ -1,6 +1,6 @@
 (function (w){
     /*const*/
-    var D = w.document, EACH = [].forEach, B = D.body, isLoading = false/*ÕýÔÚ¼ÓÔØ*/;
+    var D = w.document, EACH = [].forEach, B = D.body, isLoading = false/*ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½*/;
     //main
     D.addEventListener('DOMContentLoaded', function(){
         var $sa = $d('.js-s_all')[0],
@@ -13,9 +13,9 @@
             $sc = $d('.u-s_c')[0];
         var ZAC = 'z-active'/*const ×´Ì¬*/;
         var a_t = $s[0].getAttribute('data-id');
-        var types = [a_t]/*Ä¬ÈÏµÚÒ»¸ö*/;
+        var types = [a_t]/*Ä¬ï¿½Ïµï¿½Ò»ï¿½ï¿½*/;
         $load.style.display = 'none';
-        //´ò¿ªµ¯¿ò
+        //ï¿½ò¿ªµï¿½ï¿½ï¿½
         $sa.addEventListener('click', function(){
             $sw.style.display = 'block';
             $sb.style.display = 'block';
@@ -28,7 +28,7 @@
             $menu.style.display   = 'block';
             $sc.style.display   = 'none';
         });
-        //È·ÈÏÍê³É
+        //È·ï¿½ï¿½ï¿½ï¿½ï¿½
         $sb.addEventListener('click', function(){
             var data = {
                 type : types
@@ -48,7 +48,7 @@
                 });
             });
         });
-        //Ñ¡ÔñÀà±ð
+        //Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½
         EACH.call($s, function($e,i){
             $e.addEventListener('click', function(){
                 var $self = this, c_t = $self.getAttribute('data-id');
@@ -84,7 +84,7 @@
                     res = JSON.parse(res);
                 }catch(err){
                     console.warn(err);
-                    alert('·þÎñ·þÊý¾Ý´íÎó!!!');
+                    alert('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ï¿½!!!');
                 }
             }
             res.data.forEach(function(d){
@@ -93,7 +93,7 @@
                     '<a href="'+ d.link+'">'+
                     '<i class="s-icon" style="background: url('+d.icon_src+')"></i>'+
                     '<aside>'+
-                    '<h2 class="name"><span>'+ d.name+'</span> <i class="'+ (data.gender ? 'i_m' : 'i_w') +'"></i></h2>'+
+                    '<h2 class="name"><span>'+ d.name+'</span> <i class="'+ (d.gender ? 'i_m' : 'i_w') +'"></i></h2>'+
                     '<span class="trip">'+ d.grade+'</span>'+
                     '<span class="trip">'+ d.major+'</span>'+
                     '</aside>'+
@@ -105,7 +105,7 @@
             $load.style.display = 'none';
         }
 
-        //»¬¶¯¼ÓÔØ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         B.addEventListener('touchmove', function(){
             var hh = $lw.offsetHeight, sh = B.scrollTop, ch = D.documentElement.clientHeight;
             if(hh == sh + ch && !isLoading){
@@ -114,6 +114,7 @@
                 ajax({
                     url : '/s_get',
                     method : 'GET'
+                    //data : JSON.stringify(data)
                 }, function(res){
                     $load.style.display = 'none';
                     getSource(res, function(w, tmp){
@@ -141,12 +142,12 @@
         xhr.open(config.method, config.url);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(config.data);
-        xhr.onload = function(){
-            cb(xhr.responseText);
-        };
-        xhr.onerror = function(){
-            cb(xhr.responseText);
-        }
+        xhr.addEventListener('readystatechange', function(){
+            if(xhr.readyState == 4){
+                if(xhr.status == 200) cb(xhr.responseText);
+                else alert(xhr.status + 'åŠ è½½é”™è¯¯!!');
+            }
+        });
     }
 })(window);
 
