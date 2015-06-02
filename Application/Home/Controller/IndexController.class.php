@@ -7,17 +7,19 @@ class IndexController extends Controller {
     public function index(){
         $this->display("index");
     }
+    public function _before_index(){
+        //查看来访者是否绑定学号,未绑定则跳转到绑定学号页面
+        $ok = 1;
+        if (!$ok){
+            $this->redirect("请先绑定学号！","绑定学号地址",3);
+        }
+    }
+
     //查看校友
     public function findSchoolfellow(){
         $this->display();
     }
-    public function _before_findSchoolfellow(){
-        //查看来访者是否绑定学号
-        $ok = 1;
-        if (!$ok){
-            $this->redirect("请先绑定学号","xx",3);
-        }
-    }
+
     //完善信息表单提交处理
     public function perfectInfo(){
         $upload = new \Think\Upload();// 实例化上传类
@@ -35,6 +37,7 @@ class IndexController extends Controller {
             $this->success('上传成功！');
         }
     }
+
     //完善信息页面
     public function information(){
         //获取访问者微信号
@@ -45,6 +48,7 @@ class IndexController extends Controller {
         $this->assign("name","kiscall");
         $this->display("information");
     }
+
     //显示详细信息页面
     public function showDetail(){
 

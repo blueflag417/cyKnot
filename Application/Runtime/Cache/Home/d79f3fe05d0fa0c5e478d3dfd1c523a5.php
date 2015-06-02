@@ -15,11 +15,11 @@
         <a class="f-sub js-form_sub" href="javascript:void(0)">完成</a>
         <span>完善或修改信息</span>
     </header>
-    <form action="<!--提交地址-->" method="post" id="info_form">
+    <form action="/cyKnot/Home/perfectInfo" method="post" id="info_form">
         <div class="m-inputs">
             <div class="item"><!--姓名-->
                 <span class="filed_name">姓名</span>
-                <input type="text" class="need_input" name="uname" placeholder="李金鑫"/><!--默认的姓名-->
+                <input type="text" class="need_input" name="uname" placeholder="<?php echo ($info[0]['name']?$info[0]['name']:姓名); ?>"/><!--默认的姓名-->
             </div>
             <div class="item">
                 <span class="filed_name">姓别</span>
