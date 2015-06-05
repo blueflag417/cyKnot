@@ -23,38 +23,88 @@
             </div>
             <div class="item">
                 <span class="filed_name">姓别</span>
-                <span class="de_label">
-                    <if condition="$info[0]['sex']">
-                        <{$info[0]['sex']}>
-                        <else />
-                        男
-                    </if>
-                    <i class="s-arrow"></i></span>
-                <select name="ugender" id="s_sex" class="select_cahnge">
-                    <option value="">男</option>
-                    <option value="">女</option>
+                <div class="de_label">
+                   <span class="js-label_way">
+                        <if condition="$info[0]['sex']">
+                            <{$info[0]['sex']}>
+                            <else />
+                            男
+                        </if>
+                   </span>
+                    <i class="s-arrow"></i></div>
+                <select name="ugender" id="s_sex" class="select_cahnge js-c_way">
+                    <option value="0">男</option>
+                    <option value="1">女</option>
                 </select>
             </div>
-            <div class="item contact_way f-cb">
-                <span class="filed_name">专业</span>
-                <span class="exists_default">
-                    <if condition="$info[0]['college']">
+            <!--<div class="item contact_way f-cb">-->
+                <!--<span class="filed_name">专业</span>-->
+                <!--<span class="exists_default">-->
+                    <!--<if condition="$info[0]['college']">-->
+                        <!--<{$info[0]['college']}>-->
+                        <!--<else />-->
+                        <!--填入学院-->
+                    <!--</if>-->
+                <!--</span>-->
+            <!--</div>-->
+            <div class="item">
+                <span class="filed_name">学院</span>
+                <div class="de_label">
+                    <span class="js-label_way"><if condition="$info[0]['college']">
                         <{$info[0]['college']}>
                         <else />
                         填入学院
-                    </if>
-                </span>
+                    </if></span>
+                    <i class="s-arrow"></i></div>
+                <select name="hometown" id="" class="select_cahnge js-c_way">
+                    <option value="上海">光电</option>
+                    <option value="天津">计算机</option>
+                    <option value="重庆">通信</option>
+                    <option value="黑龙江">生物</option>
+                    <!--<option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="天津">天津</option>
+                    <option value="重庆">重庆</option>
+                    <option value="黑龙江">黑龙江</option>
+                    <option value="吉林">吉林</option>
+                    <option value="辽宁">辽宁</option>
+                    <option value="江苏">江苏</option>
+                    <option value="山东">山东</option>
+                    <option value="安徽">安徽</option>
+                    <option value="河北">河北</option>
+                    <option value="河南">河南</option>
+                    <option value="湖北">湖北</option>
+                    <option value="湖南">湖南</option>
+                    <option value="江西">江西</option>
+                    <option value="山西">山西</option>
+                    <option value="陕西">陕西</option>
+                    <option value="四川">四川</option>
+                    <option value="青海">青海</option>
+                    <option value="海南">海南</option>
+                    <option value="广东">广东</option>
+                    <option value="贵州">贵州</option>
+                    <option value="浙江">浙江</option>
+                    <option value="福建">福建</option>
+                    <option value="台湾">台湾</option>
+                    <option value="甘肃">甘肃</option>
+                    <option value="云南">云南</option>
+                    <option value="内蒙古">内蒙古</option>
+                    <option value="宁夏">宁夏</option>
+                    <option value="新疆">新疆</option>
+                    <option value="西藏">西藏</option>
+                    <option value="云南">云南</option>-->
+                </select>
             </div>
             <div class="item">
                 <span class="filed_name">家乡 </span>
-                <span class="de_label">
-                    <if condition="$info[0]['hometown']">
+                <div class="de_label">
+                    <span class="js-label_way"><if condition="$info[0]['hometown']">
                         <{$info[0]['hometown']}>
                         <else />
                         重庆
-                    </if>
-                    <i class="s-arrow"></i></span>
-                <select name="hometown" id="" class="select_cahnge">
+                    </if></span>
+                    <i class="s-arrow"></i></div>
+                <select name="hometown" id="" class="select_cahnge js-c_way">
                     <option value="北京">北京</option>
                     <option value="上海">上海</option>
                     <option value="天津">天津</option>
@@ -91,14 +141,16 @@
             </div>
             <div class="item">
                 <span class="filed_name">联系方式</span>
-                <span class="de_label js-label_way">
-                    <if condition="$info[0]['contact']">
-                        <{$info[0]['contact']}>
-                        <else />
-                        微信
-                    </if>
-                    <i class="s-arrow"></i></span>
-                <select name="connect" id="" class="select_cahnge js-c_way">
+                <div class="de_label">
+                    <span class="js-label_way">
+                        <if condition="$info[0]['contact']">
+                            <{$info[0]['contact']}>
+                            <else />
+                            微信
+                        </if>
+                    </span>
+                    <i class="s-arrow"></i></div>
+                <select name="connect" id="" data-tag="spec" class="select_cahnge js-c_way">
                     <option value="1">微信</option>
                     <option value="2">电话号码</option>
                     <option value="3">邮箱</option>
@@ -114,10 +166,11 @@
                 <input name="introduce" type="text" class="need_input"
                 <if condition="$info[0]['introduce']"> value=<{$info[0]['introduce']}><else />placeholder='输入简介'</if> />
             </div>
-            <div class="upload_img">上传图片</div>
+            <div class="upload_img js-up_hcon">上传图片</div>
         </div>
     </form>
 </div>
 </body>
 <script src="__PUBLIC__/js/info.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 </html>

@@ -1,0 +1,6 @@
+[ 2015-06-05T16:26:21+08:00 ] ::1 /cyKnot/Home/Index/demo
+ERR: 非法操作:demo
+
+[ 2015-06-05T17:15:00+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc' at line 1
+
