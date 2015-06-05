@@ -1,12 +1,12 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>校友</title>
-    <script src="__PUBLIC__/js/lib/init.js"></script>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/base.css">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/alumnus.css">
+    <script src="/cyKnot/Public/js/lib/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/lib/base.css">
+    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/alumnus.css">
 </head>
 <body>
 <div class="s-wrap">

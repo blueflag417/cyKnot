@@ -1,0 +1,84 @@
+[ 2015-06-04T09:41:52+08:00 ] ::1 /cyKnot/Home/perfectInfo
+ERR: 无法加载控制器:PerfectInfo
+
+[ 2015-06-04T09:42:14+08:00 ] ::1 /cyKnot/Home/demo
+ERR: 无法加载控制器:Demo
+
+[ 2015-06-04T12:08:51+08:00 ] ::1 /cyKnot/index.php/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005105s ]
+
+[ 2015-06-04T12:09:05+08:00 ] ::1 /cyKnot/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002439s ]
+
+[ 2015-06-04T12:09:06+08:00 ] ::1 /cyKnot/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003093s ]
+
+[ 2015-06-04T12:09:22+08:00 ] ::1 /cyKnot/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001789s ]
+
+[ 2015-06-04T12:09:30+08:00 ] ::1 /cyKnot/index.php/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003736s ]
+
+[ 2015-06-04T12:09:51+08:00 ] ::1 /cyKnot/index.php/Home/Demo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018592s ]
+
+[ 2015-06-04T19:26:03+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc' at line 1
+
+[ 2015-06-04T19:28:17+08:00 ] ::1 /cyKnot/Home/Index/css/alumnus.css
+ERR: 非法操作:css
+
+[ 2015-06-04T19:28:17+08:00 ] ::1 /cyKnot/Home/Index/css/lib/base.css
+ERR: 非法操作:css
+
+[ 2015-06-04T19:28:17+08:00 ] ::1 /cyKnot/Home/Index/js/lib/init.js
+ERR: 非法操作:js
+
